@@ -1,0 +1,39 @@
+name: us-constitution-evolution
+title: US Constitution Evolution
+tagline: Computational analysis tracking the linguistic and structural evolution of
+  the US Constitution across all amendments and eras.
+category: research
+language: Python
+visibility: public
+github: https://github.com/darianmavgo/us-constitution-evolution
+badge_language: Python
+badge_license: Open Source
+hero_eyebrow: Computational Law · NLP
+hero_description: us-constitution-evolution applies NLP and graph analysis to the
+  full text of the US Constitution and all 27 amendments, tracking linguistic drift,
+  concept evolution, and the legal lineage of rights across eras.
+features:
+- icon: 📜
+  title: Full Text Analysis
+  body: NLP analysis of every article, section, and amendment from ratification to
+    today.
+- icon: 🔗
+  title: Amendment Lineage Graph
+  body: Directed graph showing which amendments modified, clarified, or superseded
+    prior provisions.
+- icon: 📈
+  title: Linguistic Drift
+  body: Word frequency and semantic shift analysis across the 230+ year span of the
+    document.
+- icon: 🗺️
+  title: Concept Maps
+  body: Visual maps of how concepts like 'liberty', 'due process', and 'equal protection'
+    evolved over time.
+quickstart:
+- label: Install
+  code: pip install -r requirements.txt
+- label: Analyze
+  code: python analyze.py --corpus constitution.txt
+related:
+- futureproofinggovernment
+- manifesto

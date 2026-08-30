@@ -1,0 +1,35 @@
+name: speeddrill_research
+title: speeddrill_research — Cognitive Speed Drill Engine
+tagline: Micro-benchmark experiments and Go hello-worlds exploring the architecture
+  of a high-speed cognitive arithmetic drill game.
+category: games
+language: Go
+visibility: public
+github: https://github.com/darianmavgo/speeddrill_research
+badge_language: Go
+badge_license: Open Source
+hero_eyebrow: Research · Game Engine
+hero_description: speeddrill_research is the R&D repo for a planned speed drill arithmetic
+  training game — collecting Go rendering experiments, timing micro-benchmarks, and
+  input latency tests.
+features:
+- icon: 🔬
+  title: Timing Benchmarks
+  body: Measures keypress-to-display latency across different Go rendering approaches.
+- icon: ⌨️
+  title: Input Latency Tests
+  body: Characterizes raw terminal and OS input event latency for accurate reaction-time
+    scoring.
+- icon: 🧮
+  title: Arithmetic Engine
+  body: Problem generation, difficulty scaling, and answer validation prototypes.
+- icon: 🚀
+  title: Go Experiments
+  body: Multiple hello-world starters exploring terminal UI (bubbletea), ebiten, and
+    SDL2 bindings.
+quickstart:
+- label: Run
+  code: go run ./experiments/terminal_ui
+related:
+- focus_game
+- VillageDashFlash

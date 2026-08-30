@@ -1,0 +1,36 @@
+name: VillageMakeover
+title: Village Makeover — Isometric City-Builder
+tagline: An isometric web simulation game where players construct and manage a community
+  — built in 2013 with a remote team of developers.
+category: games
+language: JavaScript
+visibility: public
+github: https://github.com/darianmavgo/VillageMakeover
+badge_language: JavaScript
+badge_license: Open Source
+hero_eyebrow: City-Builder · Isometric
+hero_description: Village Makeover is an isometric city-building web game developed
+  in 2013 with a distributed team of remote developers. Players place and upgrade
+  community buildings, manage resources, and grow a thriving village from scratch.
+features:
+- icon: 🏘️
+  title: Isometric World
+  body: A fully tile-mapped isometric grid with dozens of building types and terrain
+    features.
+- icon: ⚙️
+  title: Resource Management
+  body: Manage food, materials, and population happiness to grow your village sustainably.
+- icon: 🌐
+  title: Remote Team Built
+  body: Developed collaboratively with a distributed team — an early experiment in
+    async remote development.
+- icon: 🎨
+  title: Sprite Art
+  body: Custom isometric sprite art created specifically for the game.
+quickstart:
+- label: Play
+  code: open index.html
+related:
+- villagecardgame
+- villageboardgame
+- VillageDashFlash

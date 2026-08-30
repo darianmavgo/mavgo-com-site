@@ -1,0 +1,41 @@
+name: DarianVille
+title: DarianVille — 3D Urban Systems Model
+tagline: 3D models and simulations of socioeconomic urban systems — how Darian thinks
+  cities, communities, and infrastructure should be designed.
+category: research
+language: Python
+visibility: public
+github: https://github.com/darianmavgo/DarianVille
+badge_language: Python / 3D
+badge_license: Open Source
+hero_eyebrow: Urban Systems · 3D Modeling
+hero_description: DarianVille is a 3D urban planning and systems simulation project
+  built in Python, exploring how cities would be designed if social equity, infrastructure
+  resilience, and environmental sustainability were the primary constraints.
+features:
+- icon: 🏙️
+  title: 3D City Models
+  body: Procedurally generated 3D urban layouts with configurable density, zoning,
+    and transit networks.
+- icon: ⚖️
+  title: Equity Metrics
+  body: Built-in metrics for green space access, transit equity, and housing cost-to-income
+    ratios.
+- icon: 🌱
+  title: Sustainability Sim
+  body: Simulates energy consumption, water usage, and carbon footprint across layout
+    configurations.
+- icon: 🔄
+  title: Iterative Design
+  body: Change parameters and re-run to explore how design decisions cascade through
+    city systems.
+quickstart:
+- label: Install
+  code: pip install -r requirements.txt
+- label: Generate
+  code: python generate.py --population 50000 --layout grid
+- label: Visualize
+  code: python visualize.py --model output/city.json
+related:
+- manifesto
+- futureproofinggovernment

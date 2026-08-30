@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="{{ .Site.Params.email }}">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:title" content="{{ .Title }} — Mavgo">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <title>{{ .Title }}{{ if not .IsHome }} — Mavgo{{ end }}</title>
+
+  {{ $css := resources.Get "css/style.scss" | css.Sass | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  {{- partial "nav.html" . -}}
+
+  <main>
+    {{- block "main" . }}{{- end }}
+  </main>
+
+  {{- partial "footer.html" . -}}
+
+  {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}"></script>
+
+</body>
+</html>

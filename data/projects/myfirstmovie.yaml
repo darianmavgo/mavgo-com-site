@@ -1,0 +1,33 @@
+name: myfirstmovie
+title: Signal Fracture — Film Production
+tagline: Assets, scripts, and production bible for Signal Fracture — a sci-fi/mystery
+  feature film exploring surveillance, identity, and digital consciousness.
+category: games
+language: Shell
+visibility: public
+github: https://github.com/darianmavgo/myfirstmovie
+badge_language: Film
+badge_license: Open Source
+hero_eyebrow: Feature Film · Sci-Fi
+hero_description: Signal Fracture is a sci-fi/mystery feature film in development.
+  This repository contains the production bible, script drafts, shot lists, casting
+  notes, and visual reference assets.
+features:
+- icon: 🎬
+  title: Screenplay
+  body: Full script drafts and revision history for Signal Fracture.
+- icon: 📋
+  title: Production Bible
+  body: Genre, tone, visual language, character arcs, and thematic treatment.
+- icon: 🎥
+  title: Shot Lists
+  body: Detailed shot-by-shot breakdowns for key sequences.
+- icon: 🗂️
+  title: Reference Library
+  body: Visual references, casting notes, and location scouting docs.
+quickstart:
+- label: Read
+  code: cat PRODUCTION_BIBLE.md
+- label: Script
+  code: open screenplay.pdf
+related: []

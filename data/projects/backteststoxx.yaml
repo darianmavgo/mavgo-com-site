@@ -1,0 +1,39 @@
+name: backteststoxx
+title: backteststoxx — STOXX Email Data Extractor
+tagline: A Go application that concurrently extracts STOXX market data from Gmail
+  attachments and loads it into SQLite for quantitative analysis.
+category: quant
+language: Go
+visibility: public
+github: https://github.com/darianmavgo/backteststoxx
+badge_language: Go / Gmail API
+badge_license: Open Source
+hero_eyebrow: Market Data Pipeline
+hero_description: backteststoxx uses the Gmail API and Go's goroutines to concurrently
+  download thousands of STOXX market data emails, extract the attachment data, and
+  load it into a normalized SQLite schema for backtesting.
+features:
+- icon: 📧
+  title: Gmail API Integration
+  body: Authenticates with Gmail OAuth and bulk-downloads market data emails in parallel
+    goroutines.
+- icon: ⚡
+  title: Concurrent Download
+  body: Go's goroutines slash extraction time from hours to minutes across thousands
+    of email attachments.
+- icon: 🗄️
+  title: SQLite Storage
+  body: All normalized STOXX data lands in a single portable SQLite file ready for
+    backtesting.
+- icon: 🔄
+  title: Incremental Updates
+  body: Tracks the last-seen message ID so re-runs only download new emails — no re-processing.
+quickstart:
+- label: Auth
+  code: 'go run . --auth   # opens Gmail OAuth flow'
+- label: Extract
+  code: go run . --extract --output stoxx.db
+related:
+- backtestgosqlite
+- backtest-sell-limit
+- crisis-winner

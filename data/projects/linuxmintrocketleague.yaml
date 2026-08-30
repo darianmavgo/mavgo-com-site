@@ -1,0 +1,37 @@
+name: linuxmintrocketleague
+title: linuxmintrocketleague — Linux Gaming Diagnostics
+tagline: Real-time memory and process diagnostics suite built to optimize Rocket League
+  performance on an aging Dell running Linux Mint.
+category: cloud
+language: HTML
+visibility: public
+github: https://github.com/darianmavgo/linuxmintrocketleague
+badge_language: Shell / HTML
+badge_license: Open Source
+hero_eyebrow: Linux Performance · Gaming
+hero_description: A collection of diagnostic scripts and a logging-based analysis
+  dashboard that tracks memory pressure, process scheduling, and GPU utilization while
+  Rocket League runs — helping identify and fix performance bottlenecks on resource-constrained
+  hardware.
+features:
+- icon: 🎮
+  title: Gaming-Focused
+  body: Tracks exactly the metrics that matter for a smooth 60fps gaming experience
+    on Linux.
+- icon: 📊
+  title: HTML Dashboard
+  body: Logs piped into a lightweight HTML dashboard for visual bottleneck analysis.
+- icon: ⚙️
+  title: Process Tuning
+  body: Scripts to set CPU affinity, nice values, and GPU governor settings for optimal
+    latency.
+- icon: 🔍
+  title: Memory Diagnostics
+  body: Tracks swap usage, page faults, and OOM events in real time during gameplay.
+quickstart:
+- label: Diagnose
+  code: bash rocketmode.sh --monitor
+- label: Dashboard
+  code: open dashboard.html
+related:
+- EasyGCE

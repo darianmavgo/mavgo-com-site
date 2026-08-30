@@ -1,0 +1,40 @@
+name: EasyGCE
+title: EasyGCE — Zero-Friction GCE Provisioning
+tagline: Declarative bash and gcloud scripts for spinning up, configuring, and tearing
+  down Google Compute Engine instances in seconds.
+category: cloud
+language: Shell
+visibility: public
+github: https://github.com/darianmavgo/EasyGCE
+badge_language: Shell / gcloud
+badge_license: Open Source
+hero_eyebrow: Google Cloud · GCE
+hero_description: EasyGCE wraps the gcloud CLI with opinionated, zero-friction scripts
+  for developers who want to launch, configure, and SSH into Compute Engine VMs without
+  memorizing a dozen gcloud flags.
+features:
+- icon: 🚀
+  title: One-Command Launch
+  body: spin-up.sh creates a fully-configured VM with your SSH key, firewall rules,
+    and startup script in one shot.
+- icon: 💰
+  title: Cost Awareness
+  body: Defaults to preemptible/spot instances. Includes tear-down scripts so you
+    never leave an instance running.
+- icon: 🔐
+  title: Secure by Default
+  body: Configures OS Login, scoped service accounts, and firewall rules without manual
+    IAM wrestling.
+- icon: 🛠️
+  title: Composable Scripts
+  body: Each script is a standalone bash file — combine them in your own automation
+    pipelines.
+quickstart:
+- label: Launch
+  code: bash spin-up.sh --name dev-box --machine e2-standard-4
+- label: SSH
+  code: bash ssh.sh --name dev-box
+- label: Teardown
+  code: bash teardown.sh --name dev-box
+related:
+- bqml_vertex_gemini

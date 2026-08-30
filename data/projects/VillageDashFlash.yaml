@@ -1,0 +1,38 @@
+name: VillageDashFlash
+title: VillageDashFlash — Click Management Game
+tagline: A fast-paced click management and economic time-strategy browser game — Darian's
+  first fully-deployed web game.
+category: games
+language: PHP
+visibility: public
+github: https://github.com/darianmavgo/VillageDashFlash
+badge_language: PHP / Flash
+badge_license: Open Source
+hero_eyebrow: Click Management · Web Game
+hero_description: VillageDashFlash is a click management game where players race against
+  time to grow a village economy by clicking, upgrading, and automating resource production.
+  Darian's first fully deployed web game.
+features:
+- icon: ⚡
+  title: Fast-Paced Clicking
+  body: Resource production tied directly to click speed and upgrade combos — stay
+    sharp to stay ahead.
+- icon: 📈
+  title: Upgrade Trees
+  body: Multiple upgrade paths for each production building allow for emergent strategy
+    choices.
+- icon: ⏱️
+  title: Time Pressure
+  body: Economic targets must be hit within time limits — every second counts.
+- icon: 🏅
+  title: Leaderboards
+  body: Compete for the fastest completion times on the high-score board.
+quickstart:
+- label: Run
+  code: php -S localhost:8000
+- label: Play
+  code: open http://localhost:8000
+related:
+- VillageMakeover
+- villagecardgame
+- focus_game

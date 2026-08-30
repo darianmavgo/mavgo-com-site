@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+{{- $key := .Params.dataKey -}}
+{{- $p := index hugo.Data.projects $key -}}
+
+{{ if not $p }}
+  <div class="wrapper" style="padding:4rem 0;"><p>Project data not found for key: {{ $key }}</p></div>
+{{ else }}
+
+  {{ partial "hero.html" (dict "project" $p "page" .) }}
+
+  <div class="divider"></div>
+
+  {{ partial "feature-grid.html" (dict "project" $p) }}
+
+  <div class="divider"></div>
+
+  {{ with .Content }}
+  <section class="docs-section" style="padding:4rem 0;">
+    <div class="wrapper content-page" style="max-width:1000px;">
+      <h2 style="margin-bottom:1.5rem;font-size:1.6rem;">Documentation & Architecture</h2>
+      {{ . }}
+    </div>
+  </section>
+  <div class="divider"></div>
+  {{ end }}
+
+  {{ partial "ecosystem.html" (dict "project" $p "site" .Site) }}
+
+{{ end }}
+
+{{ end }}

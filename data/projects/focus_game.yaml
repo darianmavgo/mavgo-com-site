@@ -1,0 +1,39 @@
+name: focus_game
+title: focus_game — Cognitive Focus Trainer
+tagline: A high-speed visual reaction and attention training game written in Rust,
+  designed to sharpen focus and reduce cognitive latency.
+category: games
+language: Rust
+visibility: public
+github: https://github.com/darianmavgo/focus_game
+badge_language: Rust
+badge_license: Open Source
+hero_eyebrow: Cognitive Training · Rust
+hero_description: focus_game is a fast-paced visual training game that challenges
+  your reaction time, attention switching, and working memory. Written in Rust for
+  deterministic, low-latency frame timing — every millisecond counts.
+features:
+- icon: ⚡
+  title: Rust Performance
+  body: Deterministic frame timing with no GC pauses. What you see is exactly what
+    the hardware can deliver.
+- icon: 🎯
+  title: Reaction Training
+  body: Decreasing stimulus windows force faster and more accurate responses as sessions
+    progress.
+- icon: 🧠
+  title: Attention Switching
+  body: Multi-target modes train the ability to rapidly shift attention without losing
+    tracking.
+- icon: 📊
+  title: Session Metrics
+  body: Reaction time histograms, accuracy curves, and session bests tracked over
+    time.
+quickstart:
+- label: Build
+  code: cargo build --release
+- label: Play
+  code: ./target/release/focus_game
+related:
+- speeddrill_research
+- VillageDashFlash

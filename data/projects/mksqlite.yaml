@@ -1,0 +1,52 @@
+name: mksqlite
+title: mksqlite — Convert Anything to SQLite
+tagline: Ingest CSV, Excel, Parquet, JSON, HTML, and more into a query-ready SQLite
+  database with a single command.
+category: data
+language: Go
+visibility: public
+github: https://github.com/darianmavgo/mksqlite
+badge_language: Go
+badge_license: Open Source
+hero_eyebrow: Universal Data Ingestion
+hero_description: mksqlite is a zero-config command-line tool written in Go that converts
+  virtually any tabular data format — CSV, XLSX, Parquet, JSON, HTML tables — into
+  a portable, query-ready SQLite database file. No schemas. No boilerplate.
+features:
+- icon: ⚡
+  title: Zero Config
+  body: Point at any file. mksqlite detects format, schema, and column types automatically.
+- icon: 📦
+  title: Universal Formats
+  body: Supports CSV, TSV, XLSX, Parquet, JSON arrays, HTML tables, and more out of
+    the box.
+- icon: 🔄
+  title: Streaming Ingestion
+  body: Streams arbitrarily large files into SQLite without loading everything into
+    memory first.
+- icon: 🔍
+  title: Schema Inference
+  body: 'Automatically infers and casts column types: integers, floats, dates, booleans,
+    and strings.'
+- icon: 🚀
+  title: Go Concurrency
+  body: Leverages Go's goroutines to parallelize ingestion across multiple tables
+    and sheets.
+- icon: 🔗
+  title: Ecosystem Ready
+  body: Works seamlessly alongside banquet, wasmcanvas, aggrid, and the rest of the
+    Mavgo SQLite suite.
+quickstart:
+- label: Install
+  code: go install github.com/darianmavgo/mksqlite@latest
+- label: CSV
+  code: mksqlite data.csv output.db
+- label: XLSX
+  code: mksqlite spreadsheet.xlsx finance.db
+- label: Query
+  code: sqlite3 output.db 'SELECT * FROM data LIMIT 10'
+related:
+- banquet
+- wasmcanvas
+- TableTypeMaster
+- aggrid

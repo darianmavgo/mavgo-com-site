@@ -1,0 +1,42 @@
+name: villagecardgame
+title: 'Village: Third World — Collectible Card Game'
+tagline: A printable collectible card game pitting socially beneficial businesses
+  against illicit monopolies in a developing-world economic simulation.
+category: games
+language: HTML
+visibility: public
+github: https://github.com/darianmavgo/villagecardgame
+badge_language: HTML / Print
+badge_license: Open Source
+hero_eyebrow: Card Game · Printable
+hero_description: 'Village: Third World is a fully printable collectible card game
+  where players build economic empires in a developing-world village. Collect $1,000,000
+  to win by building legitimate enterprises or cornering illicit markets — but watch
+  out for rival players.'
+features:
+- icon: 🃏
+  title: Printable Cards
+  body: Full card art and rules printable at home. Print, cut, and play — no manufacturing
+    required.
+- icon: 💰
+  title: Economic Simulation
+  body: Build businesses, generate revenue, disrupt competitors, and race to $1,000,000.
+- icon: ⚔️
+  title: Conflict Cards
+  body: Use action cards to raid, sabotage, or acquire rival enterprises.
+- icon: 🌍
+  title: Developing-World Theme
+  body: Card art and mechanics grounded in the real economics of village-scale enterprise.
+quickstart:
+- label: Print
+  code: '# Download cards PDF from the repo
+
+    # Print double-sided at 100% scale
+
+    # Cut along crop marks'
+- label: Rules
+  code: '# See RULES.md in the repository'
+related:
+- villageboardgame
+- VillageMakeover
+- VillageDashFlash

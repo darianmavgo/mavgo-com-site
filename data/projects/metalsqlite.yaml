@@ -1,0 +1,40 @@
+name: metalsqlite
+title: MetalSQLite — GPU-Accelerated macOS SQLite Viewer
+tagline: A native macOS application that uses Apple Metal to render SQLite database
+  tables at GPU speed.
+category: data
+language: Swift
+visibility: public
+github: https://github.com/darianmavgo/metalsqlite
+badge_language: Swift / Metal
+badge_license: Open Source
+hero_eyebrow: Apple Metal · macOS
+hero_description: MetalSQLite is a native macOS app written in Swift that uses Apple's
+  Metal GPU framework to render massive SQLite tables at 60fps. Bye bye beach balls.
+  Hello instant data.
+features:
+- icon: 🎮
+  title: Metal GPU Rendering
+  body: Leverages Apple Metal directly for GPU-accelerated cell drawing — handles
+    millions of rows without a frame drop.
+- icon: 🍎
+  title: Native macOS
+  body: Pure Swift, AppKit, and Metal. No Electron, no web views. Instant launch,
+    tiny memory footprint.
+- icon: 🔍
+  title: Full-Text Search
+  body: Instant fuzzy search across all columns in any table using SQLite FTS5.
+- icon: 📂
+  title: Drag & Drop
+  body: Drop any .db or .sqlite file directly onto the window to open it immediately.
+quickstart:
+- label: Clone
+  code: git clone https://github.com/darianmavgo/metalsqlite
+- label: Build
+  code: 'open MetalSQLite.xcodeproj
+
+    # then Product → Run'
+related:
+- sqliteplutogrid
+- wailssqliter
+- mksqlite

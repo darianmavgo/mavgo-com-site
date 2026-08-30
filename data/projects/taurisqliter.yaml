@@ -1,0 +1,40 @@
+name: taurisqliter
+title: taurisqliter — Tauri + React SQLite Browser
+tagline: A lightweight, cross-platform SQLite database browser built with Tauri, React,
+  and TypeScript.
+category: data
+language: TypeScript
+visibility: public
+github: https://github.com/darianmavgo/taurisqliter
+badge_language: TypeScript / Rust / Tauri
+badge_license: Open Source
+hero_eyebrow: Desktop · Tauri · React
+hero_description: taurisqliter is a Tauri 2 desktop app with a React + TypeScript
+  frontend that connects to SQLite via Rust. It's tiny, fast to launch, and uses a
+  fraction of the memory of Electron-based alternatives.
+features:
+- icon: 🦀
+  title: Rust Core
+  body: Tauri's Rust backend handles all file I/O and SQLite reads — no Node.js in
+    the hot path.
+- icon: ⚛️
+  title: React + TypeScript
+  body: Modern frontend with typed components, hooks, and a clean responsive UI.
+- icon: 🪶
+  title: Lightweight
+  body: ~5MB installer vs 150MB+ for Electron apps. Launches in milliseconds.
+- icon: 🔐
+  title: Secure
+  body: Tauri's security model sandboxes the webview and controls which APIs the frontend
+    can access.
+quickstart:
+- label: Install
+  code: npm install
+- label: Dev
+  code: npm run tauri dev
+- label: Build
+  code: npm run tauri build
+related:
+- wailssqliter
+- metalsqlite
+- sqliteplutogrid

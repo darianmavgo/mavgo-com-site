@@ -1,0 +1,38 @@
+name: bqml_vertex_gemini
+title: bqml_vertex_gemini — BigQuery × Vertex Gemini
+tagline: Run Vertex AI Gemini LLM API calls directly from within BigQuery ML — no
+  data movement, no external pipelines.
+category: cloud
+language: Shell
+visibility: public
+github: https://github.com/darianmavgo/bqml_vertex_gemini
+badge_language: BigQuery ML / Shell
+badge_license: Open Source
+hero_eyebrow: In-Database AI · Google Cloud
+hero_description: bqml_vertex_gemini demonstrates how to invoke Vertex AI Gemini models
+  from BigQuery ML remote functions, enabling LLM inference directly on warehouse-scale
+  data without moving it out of BigQuery.
+features:
+- icon: 🤖
+  title: In-Database LLM
+  body: Call Gemini from a SQL SELECT statement — no Python, no ETL, no data movement.
+- icon: ☁️
+  title: Vertex AI Integration
+  body: Uses BigQuery ML remote functions to call the Vertex AI API with IAM-based
+    auth.
+- icon: ⚡
+  title: Massively Parallel
+  body: BigQuery's distributed execution engine fans out Gemini calls across millions
+    of rows in parallel.
+- icon: 🔄
+  title: Demo Included
+  body: 'Complete end-to-end demo: schema, remote function setup, sample queries,
+    and result analysis.'
+quickstart:
+- label: Setup
+  code: bash setup.sh --project YOUR_PROJECT --location us-central1
+- label: Query
+  code: SELECT GEMINI_GENERATE(description) FROM `project.dataset.products` LIMIT
+    100
+related:
+- EasyGCE

@@ -1,0 +1,30 @@
+name: 2122grapeave
+title: 2122 Grape Ave — Property Showcase
+tagline: Property listing and architectural showcase for 2122 Grape Ave — for sale
+  and for rent.
+category: research
+language: HTML
+visibility: public
+github: https://github.com/darianmavgo/2122grapeave
+badge_language: HTML
+badge_license: Open Source
+hero_eyebrow: Real Estate · Portfolio
+hero_description: A property showcase website for 2122 Grape Ave, covering sale and
+  rental details, architectural features, photos, and contact information.
+features:
+- icon: 🏠
+  title: Property Details
+  body: Full details on square footage, rooms, lot size, and amenities.
+- icon: 📷
+  title: Photo Gallery
+  body: High-resolution interior and exterior photography.
+- icon: 💰
+  title: Pricing
+  body: Current sale and rental pricing with contact information.
+- icon: 📍
+  title: Location
+  body: Neighborhood map and nearby points of interest.
+quickstart:
+- label: View
+  code: open index.html
+related: []

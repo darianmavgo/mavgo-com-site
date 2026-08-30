@@ -1,0 +1,36 @@
+name: futureproofinggovernment
+title: Future-Proofing Government
+tagline: A strategic white paper on modernizing public sector software infrastructure
+  for resilience, transparency, and long-term civic value.
+category: research
+language: Markdown
+visibility: public
+github: https://github.com/darianmavgo/futureproofinggovernment
+badge_language: Markdown
+badge_license: Open Source
+hero_eyebrow: Civic Technology · Policy
+hero_description: Written several years ago, this white paper addresses how governments
+  can adopt software practices from high-reliability industries to build citizen-facing
+  services that scale, survive administration changes, and maintain public trust.
+features:
+- icon: 🏛️
+  title: Policy Framework
+  body: Actionable policy recommendations for legislative and executive adoption of
+    modern engineering practices.
+- icon: 🔄
+  title: Resilience Patterns
+  body: System design patterns borrowed from aviation and healthcare to prevent cascading
+    civic software failures.
+- icon: 📊
+  title: Case Studies
+  body: Real-world examples of government IT failures and how they could have been
+    prevented.
+- icon: 🔓
+  title: Open Source Mandate
+  body: The case for default-open source policies for all publicly funded software.
+quickstart:
+- label: Read
+  code: cat whitepaper.md
+related:
+- manifesto
+- us-constitution-evolution

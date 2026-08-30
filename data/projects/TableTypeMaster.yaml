@@ -1,0 +1,40 @@
+name: TableTypeMaster
+title: TableTypeMaster — Tabular Format Reference
+tagline: The authoritative taxonomy of tabular file types — MIME types, magic numbers,
+  extensions, and parsing metadata for every table format in existence.
+category: data
+language: Go
+visibility: public
+github: https://github.com/darianmavgo/TableTypeMaster
+badge_language: Go
+badge_license: Open Source
+hero_eyebrow: Format Reference
+hero_description: 'TableTypeMaster is a machine-readable registry of every tabular
+  data format: CSV, Excel, Parquet, ORC, Avro, HDF5, SQLite, and more. Each entry
+  includes MIME type, file extension, magic number signature, and parsing notes.'
+features:
+- icon: 📚
+  title: Comprehensive Registry
+  body: 'Every major tabular format catalogued: columnar, row-oriented, in-memory,
+    and wire formats.'
+- icon: 🔢
+  title: Magic Numbers
+  body: Binary magic number signatures for reliable format detection without relying
+    on file extensions.
+- icon: 🏷️
+  title: MIME Types
+  body: Official and de-facto MIME types for every format, suitable for HTTP content
+    negotiation.
+- icon: 🔌
+  title: Go API
+  body: Embed the registry as a Go package to detect and classify tabular files programmatically.
+quickstart:
+- label: Import
+  code: import "github.com/darianmavgo/TableTypeMaster/tabletypes"
+- label: Detect
+  code: 'ft := tabletypes.DetectByMagic(fileBytes)
+
+    fmt.Println(ft.Name, ft.MIME)'
+related:
+- mksqlite
+- banquet

@@ -1,0 +1,44 @@
+name: backtest-sell-limit
+title: backtest-sell-limit — Sell Limit Backtester
+tagline: Explore multiple sell-limit order scenarios against historical equity data
+  — built in Python and Go with browser-based results.
+category: quant
+language: HTML
+visibility: public
+github: https://github.com/darianmavgo/backtest-sell-limit
+badge_language: Python / Go / HTML
+badge_license: Open Source
+hero_eyebrow: Order Execution Research
+hero_description: backtest-sell-limit runs hundreds of parameterized sell-limit scenarios
+  across historical equity prices, comparing outcomes across different trigger thresholds,
+  trailing stops, and time-in-force settings. Results are served as interactive HTML
+  dashboards.
+features:
+- icon: 🎯
+  title: Parameterized Scenarios
+  body: Grid-search over limit prices, trailing stops, holding periods, and partial
+    fill rules.
+- icon: 📊
+  title: HTML Dashboards
+  body: Interactive charts rendered directly in the browser — no external BI tool
+    needed.
+- icon: 🔄
+  title: Multi-Asset
+  body: Run scenarios across hundreds of tickers in a single sweep using Go's concurrency.
+- icon: 📈
+  title: Detailed Stats
+  body: Win rate, average gain, max drawdown, Sharpe ratio, and distribution histograms
+    for each scenario.
+quickstart:
+- label: Python
+  code: 'pip install -r requirements.txt
+
+    python backtest.py --ticker AAPL --limit 0.05'
+- label: Go
+  code: go run ./cmd/backtest --config config.yaml
+- label: View
+  code: open results/index.html
+related:
+- backtestgosqlite
+- backteststoxx
+- crisis-winner

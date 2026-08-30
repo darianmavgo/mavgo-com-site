@@ -1,0 +1,38 @@
+name: wasmcanvas
+title: wasmcanvas — WebAssembly SQLite in Canvas
+tagline: Render SQLite tables at 60fps in the browser using WebAssembly and the HTML5
+  Canvas 2D API.
+category: data
+language: JavaScript
+visibility: public
+github: https://github.com/darianmavgo/wasmcanvas
+badge_language: Go / WASM / JS
+badge_license: Open Source
+hero_eyebrow: WebAssembly · Canvas 2D
+hero_description: wasmcanvas compiles a Go SQLite reader to WebAssembly and renders
+  the resulting rows directly onto an HTML5 Canvas element. No DOM rows. No virtual
+  scroll libraries. Just raw GPU-painted pixels.
+features:
+- icon: ⚡
+  title: WASM Speed
+  body: Go compiled to WebAssembly — near-native SQLite query performance inside the
+    browser.
+- icon: 🎨
+  title: Canvas Rendering
+  body: Rows painted directly to Canvas 2D. No DOM overhead, no reflows, butter-smooth
+    scrolling.
+- icon: 📦
+  title: Zero Dependencies
+  body: Ships as a single WASM binary + a tiny JS loader. Drop into any web page.
+- icon: 🔄
+  title: Streaming
+  body: Streams query results from the WASM module to the canvas painter in real time.
+quickstart:
+- label: Build
+  code: GOOS=js GOARCH=wasm go build -o main.wasm .
+- label: Serve
+  code: npx serve .
+related:
+- mksqlite
+- gopherjssqliter
+- aggrid

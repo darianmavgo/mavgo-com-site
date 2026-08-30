@@ -1,0 +1,41 @@
+name: crisis-winner
+title: crisis-winner — Crash-Resilient Stock Screener
+tagline: Quantitative historical analysis identifying equities that held up or thrived
+  during the March 2020 crash and the 2022 bear market.
+category: quant
+language: Python
+visibility: public
+github: https://github.com/darianmavgo/crisis-winner
+badge_language: Python
+badge_license: Open Source
+hero_eyebrow: Crash Analysis · Equity Screening
+hero_description: crisis-winner screens the full equity universe for stocks that outperformed
+  during the March 2020 COVID crash and the 2022 inflation bear market, applying standardized
+  return attribution and drawdown metrics.
+features:
+- icon: 📉
+  title: Crisis Window Analysis
+  body: Measures drawdown, recovery speed, and relative performance in the exact crash
+    and recovery windows.
+- icon: 🏆
+  title: Sector Attribution
+  body: Breaks down winners by sector, market cap, and beta to identify structural
+    patterns.
+- icon: 📊
+  title: Standardized Framework
+  body: Reusable strategy backtest scaffolding that can be applied to any date range
+    or market event.
+- icon: 📈
+  title: Visualization
+  body: Charts comparing winners vs the S&P 500 across both crisis windows.
+quickstart:
+- label: Install
+  code: pip install -r requirements.txt
+- label: Screen
+  code: python screen.py --event 2020-03
+- label: Chart
+  code: python visualize.py --output charts/
+related:
+- backtestgosqlite
+- backtest-sell-limit
+- study-3-signals

@@ -1,0 +1,25 @@
+{{- $site := .site -}}
+{{- $p := .project -}}
+{{ if $p.related }}
+<section class="ecosystem-section">
+  <div class="wrapper">
+    <div class="section-header" style="text-align:left;margin-bottom:1.5rem;">
+      <h2>Related Projects</h2>
+      <p>More from the Mavgo ecosystem</p>
+    </div>
+    <div class="related-grid">
+      {{ range $p.related }}
+        {{- $key := . -}}
+        {{- $rel := index hugo.Data.projects $key -}}
+        {{ if $rel }}
+        <a href="/{{ $key | urlize }}/" class="related-card">
+          <span class="related-name">{{ $rel.name }}</span>
+          <span class="related-lang">{{ $rel.language }}</span>
+          <span class="related-desc">{{ $rel.tagline | truncate 80 }}</span>
+        </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

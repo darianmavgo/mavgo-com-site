@@ -1,0 +1,39 @@
+name: villageboardgame
+title: Village Board Game — Kenya
+tagline: A strategic economic board game rooted in Darian's 2009-2010 Kenya experience
+  — build enterprises and navigate the village economy.
+category: games
+language: HTML
+visibility: public
+github: https://github.com/darianmavgo/villageboardgame
+badge_language: HTML
+badge_license: Open Source
+hero_eyebrow: Board Game · Kenya
+hero_description: The Village Board Game recreates the economic geography of a Kenyan
+  village, letting players build enterprises, trade goods, and navigate infrastructure
+  challenges — inspired by Darian's firsthand experience in Kenya in 2009 and 2010.
+features:
+- icon: 🗺️
+  title: Village Map Board
+  body: A detailed gameboard representing the physical and economic geography of a
+    rural Kenyan village.
+- icon: 💼
+  title: Enterprise Building
+  body: Construct farms, shops, transport networks, and service businesses across
+    the village.
+- icon: 🤝
+  title: Trade & Negotiation
+  body: Trade resources and negotiate deals with other players to grow your economic
+    footprint.
+- icon: 🌍
+  title: Real Inspiration
+  body: Mechanics and scenarios inspired by Darian's direct experience living and
+    working in Kenya.
+quickstart:
+- label: Download
+  code: git clone https://github.com/darianmavgo/villageboardgame
+- label: Play
+  code: open board.html
+related:
+- villagecardgame
+- VillageMakeover

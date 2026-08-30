@@ -1,0 +1,41 @@
+name: banquet
+title: banquet — URL Standard for Tabular Data
+tagline: A URL specification and Go parser that enables querying tabular data from
+  any protocol — files, APIs, databases — through a single structured URL.
+category: data
+language: Go
+visibility: public
+github: https://github.com/darianmavgo/banquet
+badge_language: Go
+badge_license: Open Source
+hero_eyebrow: Tabular Data Protocol
+hero_description: Banquet defines a universal URL schema for describing and querying
+  tabular data sources. Point a banquet URL at a CSV, a database table, an API endpoint,
+  or a Parquet file — and get back consistent, structured rows.
+features:
+- icon: 🔗
+  title: Universal URL Syntax
+  body: One URL format works across CSV, SQLite, PostgreSQL, HTTP APIs, and object
+    storage.
+- icon: 📐
+  title: Formal Specification
+  body: A rigorously defined grammar with column selection, row filtering, pagination,
+    and sorting baked in.
+- icon: 🚀
+  title: Go Parser
+  body: A fast, dependency-minimal Go implementation ready to embed in any data pipeline
+    or CLI tool.
+- icon: 🔌
+  title: Extensible
+  body: Add new data source adapters by implementing a simple Go interface.
+quickstart:
+- label: Install
+  code: go get github.com/darianmavgo/banquet
+- label: Parse
+  code: 'bq, _ := banquet.Parse("file:///data.csv?cols=name,age&limit=100")
+
+    rows, _ := bq.Fetch()'
+related:
+- mksqlite
+- TableTypeMaster
+- aggrid

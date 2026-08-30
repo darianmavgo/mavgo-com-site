@@ -1,0 +1,38 @@
+name: gopherjssqliter
+title: gopherjssqliter — Go→JS SQLite Web Viewer
+tagline: A web-based SQLite table viewer compiled from Go to JavaScript using GopherJS,
+  with React for the UI.
+category: data
+language: Go
+visibility: public
+github: https://github.com/darianmavgo/gopherjssqliter
+badge_language: Go / GopherJS
+badge_license: Open Source
+hero_eyebrow: Go → Browser
+hero_description: gopherjssqliter uses GopherJS to compile Go SQLite reader code directly
+  to JavaScript, then pipes results through to a React UI. One Go codebase, one browser
+  bundle.
+features:
+- icon: 🔄
+  title: Go → JS Compilation
+  body: GopherJS compiles the entire Go data layer to a single JS bundle — no rewriting
+    in JavaScript.
+- icon: ⚛️
+  title: React UI
+  body: Results are passed to React components for a smooth, reactive table display.
+- icon: 📡
+  title: Message Protocol
+  body: Go and React communicate via a lightweight message-passing protocol through
+    the GopherJS bridge.
+- icon: 🌐
+  title: No Backend Needed
+  body: Runs entirely in the browser — load a SQLite file from disk and query it locally.
+quickstart:
+- label: Build
+  code: gopherjs build -o dist/app.js
+- label: Serve
+  code: npx serve dist/
+related:
+- wasmcanvas
+- mksqlite
+- aggrid

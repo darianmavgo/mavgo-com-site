@@ -1,0 +1,36 @@
+name: manifesto
+title: manifesto — Darian Hickman's Engineering Philosophy
+tagline: A living document of engineering principles, software design philosophy,
+  and the systems thinking that guides every Mavgo project.
+category: research
+language: Shell
+visibility: public
+github: https://github.com/darianmavgo/manifesto
+badge_language: Markdown / Shell
+badge_license: Open Source
+hero_eyebrow: Philosophy · Architecture
+hero_description: The Mavgo Manifesto is Darian Hickman's evolving set of engineering
+  principles — covering data architecture, decentralized systems, code clarity, and
+  the social responsibility of software.
+features:
+- icon: 📜
+  title: Design Principles
+  body: Concrete principles on API design, data modeling, and system boundaries refined
+    through real-world projects.
+- icon: 🏗️
+  title: Architecture Patterns
+  body: Preferred patterns for building robust, observable, and maintainable systems.
+- icon: 🔍
+  title: Code Clarity
+  body: Rules for writing code that communicates intent — readable six months later
+    by a stranger (or yourself).
+- icon: 🌍
+  title: Civic Responsibility
+  body: How software systems affect society and what engineers owe the people who
+    use their work.
+quickstart:
+- label: Read
+  code: cat MANIFESTO.md
+related:
+- futureproofinggovernment
+- DarianVille

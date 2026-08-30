@@ -1,0 +1,41 @@
+name: aggrid
+title: aggrid — SQLite Streaming Benchmarks
+tagline: Benchmark suite and client implementations streaming SQLite query results
+  into AG Grid across multiple frontend frameworks without UI freezing.
+category: data
+language: Go
+visibility: public
+github: https://github.com/darianmavgo/aggrid
+badge_language: Go / AG Grid
+badge_license: Open Source
+hero_eyebrow: Performance Benchmarking
+hero_description: aggrid explores how to stream large SQLite datasets into AG Grid
+  efficiently in React, Svelte, and vanilla JS. The Go backend streams rows over WebSocket
+  and Server-Sent Events so the UI thread stays free.
+features:
+- icon: 📊
+  title: AG Grid Integration
+  body: Implements AG Grid's infinite row model and viewport row model for real-time
+    SQLite streaming.
+- icon: ⚡
+  title: Go Streaming Backend
+  body: Uses goroutines and channels to stream SQLite rows over WebSocket without
+    blocking.
+- icon: 🧪
+  title: Multi-Framework
+  body: Benchmarks React, Svelte, and vanilla JS clients against the same Go streaming
+    server.
+- icon: 📈
+  title: Frame-rate Monitoring
+  body: Built-in FPS counter and row-latency charts to measure UI thread impact during
+    large data loads.
+quickstart:
+- label: Server
+  code: go run ./cmd/server
+- label: Client
+  code: npm run dev
+related:
+- mksqlite
+- gopherjssqliter
+- wasmcanvas
+- banquet

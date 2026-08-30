@@ -1,0 +1,35 @@
+name: Gen97
+title: Gen97 — 26-Week Goal Sprint
+tagline: How many 10-year goals can you accomplish in 26 weeks? A productivity framework
+  and execution log for high-velocity goal sprinting.
+category: research
+language: Markdown
+visibility: public
+github: https://github.com/darianmavgo/Gen97
+badge_language: Markdown
+badge_license: Open Source
+hero_eyebrow: Productivity · Goal Framework
+hero_description: Gen97 is a structured 26-week execution protocol for compressing
+  10-year goals into half a year. Weekly reviews, constraint identification, and milestone
+  tracking — documented publicly for accountability.
+features:
+- icon: 🎯
+  title: Goal Decomposition
+  body: Framework for breaking 10-year outcomes into 26-week milestones and weekly
+    tasks.
+- icon: 📋
+  title: Weekly Reviews
+  body: Structured weekly review template for identifying blockers, updating estimates,
+    and celebrating wins.
+- icon: 🔍
+  title: Constraint Mapping
+  body: Explicit tracking of the constraints limiting each goal — time, skills, resources,
+    or dependencies.
+- icon: 📈
+  title: Progress Visualization
+  body: Visual burndown charts and milestone heatmaps for the 26-week sprint.
+quickstart:
+- label: Read
+  code: cat FRAMEWORK.md
+related:
+- manifesto

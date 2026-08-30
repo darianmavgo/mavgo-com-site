@@ -1,0 +1,48 @@
+name: backtestgosqlite
+title: backtestgosqlite — Algorithmic Trading Engine
+tagline: A high-performance backtesting and market simulation engine in Go and PL/pgSQL
+  storing all tick data, signals, and results in SQLite.
+category: quant
+language: Go
+visibility: public
+github: https://github.com/darianmavgo/backtestgosqlite
+badge_language: Go / PL/pgSQL
+badge_license: Open Source
+hero_eyebrow: Algorithmic Trading · Backtesting
+hero_description: backtestgosqlite is a microsecond-resolution backtesting framework
+  that replays historical market tick data, executes order logic, and stores every
+  fill, signal, and P&L snapshot into a portable SQLite database for post-trade analysis.
+features:
+- icon: ⚡
+  title: Microsecond Resolution
+  body: Replays tick-level data with microsecond timestamps using Go's time package
+    and channel-based event loop.
+- icon: 📊
+  title: Full Trade Ledger
+  body: Every order, fill, cancel, and P&L snapshot written to SQLite — query trade
+    history with plain SQL.
+- icon: 🔄
+  title: Multi-Strategy
+  body: Run multiple strategy instances concurrently; Go goroutines keep them isolated
+    and fast.
+- icon: 📈
+  title: PL/pgSQL Logic
+  body: Strategy signal generation defined in PL/pgSQL stored procedures — reusable
+    across PostgreSQL and SQLite.
+- icon: 📉
+  title: Risk Engine
+  body: Built-in position limits, drawdown guards, and max loss circuit breakers.
+- icon: 📂
+  title: Portable Results
+  body: All backtest output in a single SQLite file — open with any SQLite viewer,
+    no special tooling required.
+quickstart:
+- label: Run
+  code: go run ./cmd/backtest --config config.yaml
+- label: Query
+  code: sqlite3 results.db 'SELECT date, pnl, drawdown FROM trades ORDER BY date'
+related:
+- backtest-sell-limit
+- backteststoxx
+- crisis-winner
+- study-3-signals

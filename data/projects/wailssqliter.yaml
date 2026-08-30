@@ -1,0 +1,41 @@
+name: wailssqliter
+title: wailssqliter — Native Desktop SQLite Browser
+tagline: A native cross-platform desktop application for browsing SQLite databases,
+  built with Wails 2 and Go.
+category: data
+language: Go
+visibility: public
+github: https://github.com/darianmavgo/wailssqliter
+badge_language: Go / Wails 2
+badge_license: Open Source
+hero_eyebrow: Desktop · Cross-Platform
+hero_description: wailssqliter wraps a high-performance SQLite reader in a Wails 2
+  native desktop application. Get a real OS window, native menus, and drag-and-drop
+  file opening with Go powering the data layer.
+features:
+- icon: 🖥️
+  title: Native Desktop
+  body: Packaged as a real native app — macOS .app, Windows .exe, or Linux binary.
+    No browser required.
+- icon: ⚡
+  title: Go Backend
+  body: The data layer is pure Go, so SQLite queries execute at native speed directly
+    in the process.
+- icon: 🎨
+  title: Modern UI
+  body: Frontend built with a lightweight web UI powered by Wails' IPC bridge — clean
+    and responsive.
+- icon: 📂
+  title: Drag & Drop
+  body: Drop any SQLite file onto the window to open it instantly.
+quickstart:
+- label: Install
+  code: go install github.com/wailsapp/wails/v2/cmd/wails@latest
+- label: Dev
+  code: wails dev
+- label: Build
+  code: wails build
+related:
+- taurisqliter
+- metalsqlite
+- sqliteplutogrid

@@ -1,0 +1,40 @@
+name: study-3-signals
+title: study-3-signals — 3-Signal Momentum Model
+tagline: Predictive modeling framework using BAR, SPY, and BND signals to forecast
+  SPXL (3x S&P 500 leveraged ETF) movements.
+category: quant
+language: Python
+visibility: public
+github: https://github.com/darianmavgo/study-3-signals
+badge_language: Python
+badge_license: Open Source
+hero_eyebrow: Predictive Signal Research
+hero_description: study-3-signals trains and tests predictive models on the relationship
+  between three momentum signals (BAR, SPY, BND) and next-day SPXL returns, exploring
+  feature engineering, lag analysis, and model selection.
+features:
+- icon: 📡
+  title: 3-Signal Framework
+  body: Uses Barchart (BAR), S&P 500 ETF (SPY), and Bond ETF (BND) as predictors for
+    SPXL direction.
+- icon: 🔍
+  title: Feature Engineering
+  body: Lag windows, rolling statistics, and cross-signal ratios as model inputs.
+- icon: 🤖
+  title: Model Selection
+  body: Compares logistic regression, gradient boosting, and LSTM across walk-forward
+    validation splits.
+- icon: 📊
+  title: Signal Attribution
+  body: SHAP values and permutation importance to understand which signals drive predictions.
+quickstart:
+- label: Install
+  code: pip install -r requirements.txt
+- label: Train
+  code: python train.py --model lgbm
+- label: Evaluate
+  code: python evaluate.py --report
+related:
+- crisis-winner
+- backtestgosqlite
+- backtest-sell-limit

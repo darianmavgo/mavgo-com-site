@@ -1,0 +1,42 @@
+name: sqliteplutogrid
+title: sqliteplutogrid — Performant SQLite Grid Viewer
+tagline: Render and navigate massive SQLite databases with blazing-fast, virtualized
+  PlutoGrid tables in Flutter.
+category: data
+language: Dart
+visibility: public
+github: https://github.com/darianmavgo/sqliteplutogrid
+badge_language: Dart / Flutter
+badge_license: Open Source
+hero_eyebrow: SQLite Visualization
+hero_description: sqliteplutogrid is a Flutter-based desktop and web application that
+  renders large SQLite databases in a high-performance virtual grid powered by PlutoGrid
+  — so millions of rows load instantly without freezing the UI.
+features:
+- icon: ⚡
+  title: Virtualized Rendering
+  body: PlutoGrid's virtualization means only visible rows are rendered — scroll through
+    millions of records instantly.
+- icon: 🖥️
+  title: Cross-Platform
+  body: Runs natively on macOS, Windows, Linux, and as a web app — all from a single
+    Flutter codebase.
+- icon: 🔍
+  title: Live Search & Filter
+  body: Full-text search and column filtering without any round-trips to disk.
+- icon: 📊
+  title: Schema Explorer
+  body: Browse all tables, views, and indices in a sidebar. Jump between tables with
+    one click.
+quickstart:
+- label: Run
+  code: flutter run -d macos
+- label: Web
+  code: flutter run -d chrome
+- label: Build
+  code: flutter build macos --release
+related:
+- mksqlite
+- wailssqliter
+- metalsqlite
+- wasmcanvas

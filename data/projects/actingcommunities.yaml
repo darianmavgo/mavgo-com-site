@@ -1,0 +1,36 @@
+name: actingcommunities
+title: actingcommunities — Acting School Research
+tagline: Research repository documenting acting pedagogy, conservatory ecosystems,
+  professional pathways, and the economics of stage and screen craft.
+category: research
+language: Markdown
+visibility: public
+github: https://github.com/darianmavgo/actingcommunities
+badge_language: Markdown
+badge_license: Open Source
+hero_eyebrow: Research · Arts & Media
+hero_description: A structured research repository on acting communities, training
+  methodologies, and the professional landscape of performance. Covers conservatory
+  programs, self-teaching paths, and the business of acting.
+features:
+- icon: 🎭
+  title: School Comparison
+  body: Side-by-side comparison of major acting conservatories, methods, and outcomes
+    data.
+- icon: 📚
+  title: Method Research
+  body: Deep dives into Stanislavski, Meisner, Practical Aesthetics, and other major
+    pedagogical frameworks.
+- icon: 💼
+  title: Career Economics
+  body: Data on union rates, audition rates, booking rates, and income distribution
+    in the acting profession.
+- icon: 🌐
+  title: Community Map
+  body: Geographic and digital map of acting communities, workshops, and professional
+    networks.
+quickstart:
+- label: Read
+  code: cat RESEARCH.md
+related:
+- myfirstmovie

@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects. Project pages moved from /projects/<slug>/ to /<slug>/.
+/projects       /#projects   301
+/projects/      /#projects   301
+/projects/*     /:splat      301

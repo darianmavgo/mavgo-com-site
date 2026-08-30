@@ -1,0 +1,20 @@
+{{- $p := .project -}}
+{{ if $p.features }}
+<section class="features-section">
+  <div class="wrapper">
+    <div class="section-header">
+      <h2>Features</h2>
+      <p>{{ $p.tagline }}</p>
+    </div>
+    <div class="feature-grid">
+      {{ range $p.features }}
+      <div class="feature-card">
+        <span class="feature-icon">{{ .icon }}</span>
+        <h3>{{ .title }}</h3>
+        <p>{{ .body }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

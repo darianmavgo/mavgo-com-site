@@ -1,0 +1,38 @@
+name: rubikcube
+title: rubikcube — 3D Rubik's Cube Simulator
+tagline: An interactive 3D Rubik's Cube solver and algorithm visualizer built in Flutter/Dart
+  with full 3D viewport rotation.
+category: games
+language: Dart
+visibility: public
+github: https://github.com/darianmavgo/rubikcube
+badge_language: Dart / Flutter
+badge_license: Open Source
+hero_eyebrow: 3D Puzzle · Flutter
+hero_description: rubikcube is a Flutter app that renders a fully interactive 3D Rubik's
+  Cube with tap-to-turn, free-rotate camera, and step-by-step algorithm replay — built
+  on Flutter's 3D rendering capabilities.
+features:
+- icon: 🎲
+  title: Full 3D Viewport
+  body: Rotate the cube freely in 3D space. Touch and drag to inspect any face at
+    any angle.
+- icon: 🖱️
+  title: Tap to Turn
+  body: Tap any visible sticker to trigger that face's move. Swipe for quarter, half,
+    and prime turns.
+- icon: 🤖
+  title: Algorithm Replay
+  body: Load any algorithm string (CFOP, Roux, etc.) and watch it execute move-by-move
+    with animation.
+- icon: 🔀
+  title: Scramble & Solve
+  body: Generate random scrambles and step through the solution sequence interactively.
+quickstart:
+- label: Run
+  code: flutter run
+- label: Web
+  code: flutter run -d chrome
+related:
+- sqliteplutogrid
+- focus_game
